@@ -1,0 +1,23 @@
+@import "../../../App/vars";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 29px;
+
+  width: 232px;
+  height: 58px;
+
+  font-family: "Rosario", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: $white-color;
+
+  background: #ff4f5a;
+  border-radius: 8px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+@import "../../../App/vars";
+@import "../../../App/common";
+
+.startContainer {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  max-width: 1390px;
+}
+
+.startSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+
+  margin-top: 70px;
+
+  h1 {
+    font-family: "Rosario", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+
+    width: 570px;
+
+    color: $black-color;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+
+    height: 900px;
+    width: 100%;
+
+    background-image: url("../../../assets/img/main-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
