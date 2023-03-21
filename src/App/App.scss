@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;500;700&family=Rosario:wght@400;700&family=Rowdies&display=swap");
+
+@import "./reset";
+@import "./vars";
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Rosario', sans-serif;
+// font-family: 'Rowdies', cursive;
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+
+  background-color: $white-color;
+}

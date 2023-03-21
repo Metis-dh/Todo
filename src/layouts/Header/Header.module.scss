@@ -1,0 +1,48 @@
+@import "../../App/vars";
+@import "../../App/common";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  .logoIcon {
+    height: 41px;
+    width: 41px;
+  }
+
+  .logoTitle {
+    font-family: "Rowdies", cursive;
+    font-size: 36px;
+    line-height: 45px;
+    color: $red-color;
+  }
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+
+  font-family: "Rosario", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  .login {
+    font-weight: 700;
+    color: $red-color;
+  }
+
+  li {
+    cursor: pointer;
+  }
+}
