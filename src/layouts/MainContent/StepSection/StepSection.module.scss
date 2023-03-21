@@ -1,0 +1,44 @@
+@import "../../../App/vars";
+@import "../../../App/common";
+
+.stepSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 115px;
+
+  margin-top: 140px;
+
+  h2 {
+    font-family: "Rosario", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  width: 100%;
+
+  .step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+
+    img {
+      height: 95px;
+      width: 95px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+  }
+}
