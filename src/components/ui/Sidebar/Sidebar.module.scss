@@ -1,0 +1,38 @@
+@import "../../../App/vars";
+
+.sidebarContainer {
+  width: 330px;
+  padding: 40px 15px;
+
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+
+  .active {
+    filter: invert(44%) sepia(37%) saturate(3101%) hue-rotate(326deg)
+      brightness(99%) contrast(107%);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      cursor: pointer;
+    }
+  }
+
+  img {
+    height: 24px;
+  }
+}

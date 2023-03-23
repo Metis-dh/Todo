@@ -1,9 +1,7 @@
 import Header from "../../layouts/Header";
 import MainContent from "../../layouts/MainContent";
 
-import styles from "./Main.module.scss";
-
-const MainPage = () => {
+const Landing = () => {
   return (
     <>
       <Header />
@@ -12,4 +10,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default Landing;

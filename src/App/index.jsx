@@ -1,10 +1,13 @@
-import MainPage from "../pages/MainPage";
+import Home from "../pages/Home";
+import Landing from "../pages/Landing";
+
 import "./App.scss";
 
 const App = () => {
   return (
     <div className="App">
-      <MainPage />
+      {/* <Landing /> */}
+      <Home />
     </div>
   );
 };
