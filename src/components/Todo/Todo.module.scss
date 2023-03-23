@@ -1,0 +1,53 @@
+@import "../../App/vars";
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+
+  padding: 10px;
+  width: 100%;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+
+  input[type="checkbox"] {
+    margin: 0;
+
+    width: 20px;
+    height: 20px;
+    accent-color: $red-color;
+
+    cursor: pointer;
+  }
+
+  .todo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 1;
+
+    p {
+      font-size: 19px;
+      line-height: 1.2;
+
+      color: $gray-color;
+    }
+  }
+
+  .options {
+    display: flex;
+    column-gap: 10px;
+    margin-left: 0;
+
+    button {
+      border: none;
+      background-color: inherit;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
