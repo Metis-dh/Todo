@@ -1,10 +1,10 @@
-import Header from "../../layouts/Header";
-import MainContent from "../../layouts/MainContent";
+import MainHeader from "../../components/MainHeader";
+import MainContent from "../../components/MainContent";
 
 const Landing = () => {
   return (
     <>
-      <Header />
+      <MainHeader />
       <MainContent />
     </>
   );

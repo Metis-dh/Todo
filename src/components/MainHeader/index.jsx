@@ -1,8 +1,8 @@
 import logo from "../../assets/icons/logo.svg";
 
-import styles from "./Header.module.scss";
+import styles from "./MainHeader.module.scss";
 
-const Header = () => {
+const MainHeader = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -19,4 +19,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainHeader;

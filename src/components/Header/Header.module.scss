@@ -1,0 +1,49 @@
+@import "../../App/vars";
+
+.headerContainer {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  background-color: $red-color;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  .logoIcon {
+    height: 41px;
+    width: 41px;
+  }
+
+  .logoTitle {
+    font-family: "Rowdies", cursive;
+    font-size: 36px;
+    line-height: 45px;
+    color: $white-color;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  img {
+    height: 55px;
+    width: 55px;
+  }
+
+  p {
+    color: $white-color;
+  }
+}

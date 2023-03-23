@@ -1,6 +1,6 @@
 import TodayTasks from "../../components/TodayTasks";
 import Sidebar from "../../components/ui/Sidebar";
-import Header from "../../layouts/Header";
+import Header from "../../components/Header";
 
 import styles from "./Home.module.scss";
 
