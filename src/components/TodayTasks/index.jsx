@@ -4,23 +4,46 @@ import plusIcon from "../../assets/icons/add.svg";
 
 import styles from "./TodayTasks.module.scss";
 import TaskForm from "../TaskForm";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const TodayTasks = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const todos = useSelector((state) => state.todo.todos);
+
+  const [task, setTask] = useState({
+    id: "",
+    index: null,
+    title: "",
+    description: "",
+  });
+
   return (
     <div className={styles.tasksContainer}>
       <div className={styles.mainTasks}>
         <h1>Today</h1>
         <span>4/6 completed</span>
         <div className={styles.todoList}>
-          <Todo />
-          <Todo />
-          <Todo />
+          {todos.map((todo, index) => (
+            <Todo
+              key={todo.id}
+              index={index}
+              {...todo}
+              setTask={setTask}
+              task={task}
+              setIsOpen={setIsOpen}
+            />
+          ))}
         </div>
-        <button className={styles.addBtn}>
-          <img src={plusIcon} alt="add" />
-          Add task
-        </button>
-        <TaskForm />
+        {!isOpen && (
+          <button className={styles.addBtn} onClick={() => setIsOpen(true)}>
+            <img src={plusIcon} alt="add" />
+            Add task
+          </button>
+        )}
+        {isOpen && (
+          <TaskForm setTask={setTask} task={task} setIsOpen={setIsOpen} />
+        )}
       </div>
     </div>
   );
