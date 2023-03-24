@@ -13,6 +13,7 @@ const TaskForm = ({ setTask, task, setIsOpen }) => {
       index: null,
       title: "",
       description: "",
+      completed: false,
     });
     setIsOpen(false);
   };
@@ -24,6 +25,7 @@ const TaskForm = ({ setTask, task, setIsOpen }) => {
       index: null,
       title: "",
       description: "",
+      completed: false,
     });
     setIsOpen(false);
   };
@@ -34,6 +36,7 @@ const TaskForm = ({ setTask, task, setIsOpen }) => {
       index: null,
       title: "",
       description: "",
+      completed: false,
     });
     setIsOpen(false);
   };

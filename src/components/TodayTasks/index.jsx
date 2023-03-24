@@ -9,20 +9,27 @@ import { useState } from "react";
 
 const TodayTasks = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const todos = useSelector((state) => state.todo.todos);
+  const completedTodos = useSelector((state) =>
+    state.todo.todos.filter((todo) => todo.completed === true)
+  );
 
   const [task, setTask] = useState({
     id: "",
     index: null,
     title: "",
     description: "",
+    completed: false,
   });
 
   return (
     <div className={styles.tasksContainer}>
       <div className={styles.mainTasks}>
         <h1>Today</h1>
-        <span>4/6 completed</span>
+        <span>
+          {completedTodos.length} / {todos.length} completed
+        </span>
         <div className={styles.todoList}>
           {todos.map((todo, index) => (
             <Todo

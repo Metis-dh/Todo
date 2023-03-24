@@ -4,19 +4,40 @@ import editIcon from "../../assets/icons/edit.svg";
 import deleteIcon from "../../assets/icons/delete.svg";
 
 import styles from "./Todo.module.scss";
-import { deleteTask } from "../../store/todoSlice";
+import { deleteTask, toggleTask } from "../../store/todoSlice";
+import { useState } from "react";
 
-const Todo = ({ id, title, description, setTask, index, setIsOpen }) => {
+const Todo = ({
+  id,
+  title,
+  description,
+  completed,
+  setTask,
+  index,
+  setIsOpen,
+}) => {
   const dispatch = useDispatch();
 
+  const [checked, setChecked] = useState(false);
+
   const editTask = () => {
-    setTask({ id, index, title, description });
+    setTask({ id, index, title, description, completed });
     setIsOpen(true);
+  };
+
+  const toggleTaskHandler = (e) => {
+    setChecked(e.target.checked);
+    dispatch(toggleTask(id));
   };
 
   return (
     <div className={styles.todoItem}>
-      <input type="checkbox" name="toggle" />
+      <input
+        value={checked}
+        onChange={toggleTaskHandler}
+        type="checkbox"
+        name="toggle"
+      />
       <div className={styles.todo}>
         <h4>{title}</h4>
         <p>{description}</p>
